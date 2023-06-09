@@ -1,0 +1,34 @@
+/* Contenedor */
+
+.inputTaskContent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+/* El input */
+
+.inputTask{
+    width: 350px;
+    font-size: 20px;
+    background-color: #F8F6F4;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid black;
+    outline: none;
+}
+
+/* Boton */
+
+.addTask{
+
+    padding: 21px;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: #C4DFDF;
+}

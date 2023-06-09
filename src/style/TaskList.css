@@ -1,0 +1,7 @@
+.taskListInput{
+    display: flex;
+    /* Para que se agreguen las tareas en lineas diferentes  */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}

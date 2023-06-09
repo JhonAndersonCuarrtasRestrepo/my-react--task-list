@@ -1,0 +1,16 @@
+COMPONENTE: Tasklist.jsx (va despues de --> const [tasks, setTasks] = useState([]);)
+
+  // se manipula los datos de localStorage
+    useEffect(()=>{
+        //primero toca parsearlo para pasarlo a texto, cuando lo tengamos con el get hay que convertirlo a JSON
+        const data = {name:'Jhon'}
+        // get obtener y el set es setear enviar
+        //nos convierta ese 
+        window.localStorage.setItem('taskList',JSON.stringify(data));
+        const resultado = window.localStorage.getItem('taskList');
+        console.log(resultado)
+        // si los resultados vienen nulos, si taskList no esta todavia, hay que validarlo con un condicional 
+         
+    },[])
+
+    // Generar una copia para evitar borrado, 

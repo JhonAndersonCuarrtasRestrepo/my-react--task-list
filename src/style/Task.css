@@ -1,0 +1,40 @@
+.taskContent{
+    width: 500px;
+    min-height: 60px;
+    background-color: #E3F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(118, 118, 118);
+    cursor: pointer;
+    margin: 10px 0px 10px 40px;
+    border-radius: 9px;
+}
+
+/* Texto */
+
+.task{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Esto hara que el texto se adapte al contenido es decir se expande verticalmente */
+    overflow-wrap: aywhere;
+}
+
+/* Icono */
+
+.iconoEliminar{
+    width: 30px;
+    height: 30px;
+    margin: 5px 3%;
+}
+
+/* Tarea completada */
+
+.taskContent.completed{
+    background-color: #F8F6F4;
+    text-decoration: line-through;
+}
