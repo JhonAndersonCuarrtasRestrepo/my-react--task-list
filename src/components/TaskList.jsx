@@ -7,8 +7,7 @@ function TaskList( ) {
 
 // Editar tarea
 
-const [editingTaskId, setEditingTaskId] = useState(null);
-const [editedTask, setEditedTask] = useState('');
+
 
 
 const handleEdit = () => {
