@@ -25,6 +25,8 @@ function TaskListInput(props){
             props.onSubmit(newTask);
     }
 
+
+    
     return(
         <form onSubmit={handleInput} className='inputTaskContent'>
             <input className='inputTask' type="text" placeholder='Ingresa una tarea' name='texto' onChange={handleChange} />

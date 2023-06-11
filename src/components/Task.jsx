@@ -1,4 +1,5 @@
-import React from "react";
+import {useState} from "react";
+import TaskList from "./TaskList";
 import '../style/Task.css';
 import { MdOutlineDeleteForever } from "react-icons/md";
 import { GoDiffAdded } from "react-icons/go";
@@ -6,8 +7,19 @@ import { BsCheck2Square } from "react-icons/bs";
 import { FiEdit } from "react-icons/fi";
 
 function Task({ id, completeTask, deleteTask, texto, completed, editTask }){
+
+    // Cuando no esta en modo editar cuando editMoe esta en false, no se puede cambiar
+    const [editMode, setEditMode] = useState(false);
+
+    //Manejador de eventos
+
+//   const handleEdit = () => {
+//   setEditingTaskId(id);
+//   setEditedTask(texto);
+// };
+
     return (
-        <div className={completed ? 'taskContent completed' :'taskContent' }>
+            <div className={completed ? 'taskContent completed' :'taskContent' }>
 
 
             {/* El onClick se usa para que dando click sobre la tarea se complete */}
@@ -25,7 +37,8 @@ function Task({ id, completeTask, deleteTask, texto, completed, editTask }){
             <div className="iconoEliminar" onClick={() => editTask(id)}>
                 <FiEdit className="iconoEliminar"/>
             </div>
-            
+
+   
         </div>
     );
 }
